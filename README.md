@@ -35,11 +35,19 @@ Eseguire `node board.js`, la board viene salvata in `board.png`
 ## Aggiornare il target
 Il target viene automaticamente aggiornato con l'ultima versione disponibile in questa repo. Per chiedere modifiche al target o ottenere la password contattare: [/u/EnderStarways](https://www.reddit.com/user/EnderStarways) (giorno), [/u/TheHammerstein](https://www.reddit.com/user/TheHammerstein) (notte).
 
-## Immagine corrente
+## Progetto corrente (target.png)
 
 ![Target](https://raw.githubusercontent.com/theitalyplace/reddit-place-italy/master/target.png)
 
+## Progetto difensivo
+da copiare su target.png quando nessuno sta supervisionando un progetto corrente
+
+![Target](https://raw.githubusercontent.com/theitalyplace/reddit-place-italy/master/target_difensivo.png)
+
 ## Changelog
+
+2017-04-03 12:55 CSET
+* Terminato il legionario ora parte il progetto spaghetti
 
 2017-04-03 10:29 CSET
 * Nuovo repo condiviso, aggiornato target, aggiornati link vari
