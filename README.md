@@ -4,7 +4,7 @@ Questo programma coordina gli sforzi di [/r/italy](https://www.reddit.com/r/ital
 ![reddit italy logo](r_italy_logo.png)
 
 ## Installazione - Windows
-1. Installare [Node.js](https://nodejs.org/it/)
+1. Installare [Node.js versione 6](https://nodejs.org/it/)
 2. Scaricare ed estrarre [reddit-place-italy](https://github.com/theitalyplace/reddit-place-italy/archive/master.zip)
 3. Aprire il prompt comandi nella cartella scaricata
 	- Con Windows 10: SHIFT + tasto destro del mouse sulla cartella, "Apri finestra di comando qui"
@@ -18,6 +18,7 @@ git clone git@github.com:theitalyplace/reddit-place-italy.git
 cd reddit-place-italy
 npm install
 ```
+Nota: serve Node versione 6
 
 ## Configurazione
 Rinominare `users.EMPTY.json` in `users.json`.
@@ -33,6 +34,10 @@ Eseguire `node board.js`, la board viene salvata in `board.png`
 
 ## Aggiornare il target
 Il target viene automaticamente aggiornato con l'ultima versione disponibile in questa repo. Per chiedere modifiche al target o ottenere la password contattare: [/u/EnderStarways](https://www.reddit.com/user/EnderStarways) (giorno), [/u/TheHammerstein](https://www.reddit.com/user/TheHammerstein) (notte).
+
+## Immagine corrente
+
+![Target](https://raw.githubusercontent.com/theitalyplace/reddit-place-italy/master/target.png)
 
 ## Changelog
 
