@@ -46,6 +46,9 @@ da copiare su target.png quando nessuno sta supervisionando un progetto corrente
 
 ## Changelog
 
+2017-04-03 14:04 CSET
+* Terminato gli spaghetti, si torna in difesa
+
 2017-04-03 12:55 CSET
 * Terminato il legionario ora parte il progetto spaghetti
 
