@@ -1,3 +1,6 @@
+/*jslint esversion: 6, node: true */
+'use strict';
+
 /*************************
  *  Reddit /r/place API  *
  *************************/
@@ -11,12 +14,12 @@ exports.login = function(username, password, jar, callback) {
 		url: 'login',
 		form: { user: username, passwd: password, api_type: "json" },
 		jar: jar
-	}
+	};
 	request.post(
 		options,
 		callback
 	);
-}
+};
 
 // get a pixel color
 exports.pixel = function(x, y, callback) {
@@ -24,19 +27,19 @@ exports.pixel = function(x, y, callback) {
 		'place/pixel.json?x=' + x + '&y=' + y,
 		callback
 	);
-}
+};
 
 // get the waiting time
 exports.time = function(jar, callback) {
 	let options = {
 		url: 'place/time.json',
 		jar: jar
-	}
+	};
 	request.get(
 		options,
 		callback
 	);
-}
+};
 
 // set a pixel color
 exports.draw = function(x, y, color, jar, modhash, callback) {
@@ -45,18 +48,18 @@ exports.draw = function(x, y, color, jar, modhash, callback) {
 		form: { x: x, y: y, color: color },
 		headers: { 'X-Modhash': modhash },
 		jar: jar
-	}
+	};
 	request.post(
 		options,
 		callback
 	);
-}
+};
 
 // download the board bitmap
 exports.board = function(callback) {
 	let options = {
 		url: 'place/board-bitmap',
 		encoding: null
-	}
+	};
 	request.get(options, callback);
-}
+};

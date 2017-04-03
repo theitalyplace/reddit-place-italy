@@ -1,3 +1,6 @@
+/*jslint esversion: 6, node: true */
+'use strict';
+
 let fs = require('fs');
 let PNG = require('pngjs').PNG;
 let request = require('request');
@@ -20,7 +23,7 @@ exports.findDiffPixel = function(callback) {
 	} else {
 		findDiffPixel2(callback);
 	}
-}
+};
 
 function findDiffPixel2(callback) {
 	getBoardBitmap(function(bitmap) {

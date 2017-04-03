@@ -1,3 +1,6 @@
+/*jslint esversion: 6, node: true */
+'use strict';
+
 let fs = require('fs');
 let PNG = require('pngjs').PNG;
 
@@ -9,7 +12,7 @@ r.board(function(err, httpResponse, body) {
 
 exports.saveBoardInPNG = function(bitmap, callback) {
 	bitmap2PNG(bitmap).pack().pipe(fs.createWriteStream('board.png'));
-}
+};
 
 const colors = [
 	[255, 255, 255],
