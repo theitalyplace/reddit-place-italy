@@ -10,19 +10,12 @@ let board = require('./board');
 
 
 let targetBitmap;
-let targetTime = new Date(0);
 
 exports.findDiffPixel = function(callback) {
-	let currTime = new Date();
-	// update target each 30 mins
-	if (Math.floor((currTime - targetTime) / (1000 * 60)) >= 5) {
-		getTargetBitmap(function(bitmap) {
-			targetBitmap = bitmap;
-			findDiffPixel2(callback);
-		});
-	} else {
+	getTargetBitmap(function(bitmap) {
+		targetBitmap = bitmap;
 		findDiffPixel2(callback);
-	}
+	});	
 };
 
 function findDiffPixel2(callback) {
