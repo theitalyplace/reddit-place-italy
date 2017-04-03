@@ -1,5 +1,5 @@
 # Reddit Place Italia
-Questo programma coordina gli sforzi di [/r/italy](https://www.reddit.com/r/italy/) su [/r/place](https://www.reddit.com/r/place/)
+Questo programma coordina gli sforzi di [/r/italy](https://www.reddit.com/r/italy/) su [/r/place](https://www.reddit.com/r/place/). Discussioni su [/r/theitalyplace](https://www.reddit.com/r/theitalyplace/) e sulla chat live nel [canale discord](https://discord.gg/YjCM7uv)
 
 ![reddit italy logo](r_italy_logo.png)
 
@@ -14,7 +14,7 @@ Questo programma coordina gli sforzi di [/r/italy](https://www.reddit.com/r/ital
 ## Installazione - Linux
 ```
 apt-get install nodejs
-git clone git@github.com:skilion/reddit-place-italy.git
+git clone git@github.com:theitalyplace/reddit-place-italy.git
 cd reddit-place-italy
 npm install
 ```
@@ -31,7 +31,13 @@ npm start
 ## Creare un'immagine della board
 Eseguire `node board.js`, la board viene salvata in `board.png`
 
+## Aggiornare il target
+Il target viene automaticamente aggiornato con l'ultima versione disponibile in questa repo. Per chiedere modifiche al target o ottenere la password contattare: /u/EnderStarways, TheHammerstein
+
 ## Changelog
+
+2017-04-03 10:29 CSET
+* Nuovo repo condiviso, aggiornato target, aggiornati link vari
 
 2017-04-02 23:10 CET
 * Corretto bug per cui multipli account correggono contemporaneamente lo stesso pixel
