@@ -41,7 +41,7 @@ function getTargetBitmap(callback) {
 		});
 	});
 	
-	request('https://raw.githubusercontent.com/skilion/reddit-place-italy/master/target.png')
+	request('https://raw.githubusercontent.com/theitalyplace/reddit-place-italy/master/target.png')
 	.pipe(targetWriter);
 }
 
