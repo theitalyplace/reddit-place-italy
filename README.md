@@ -32,7 +32,7 @@ npm start
 Eseguire `node board.js`, la board viene salvata in `board.png`
 
 ## Aggiornare il target
-Il target viene automaticamente aggiornato con l'ultima versione disponibile in questa repo. Per chiedere modifiche al target o ottenere la password contattare: /u/EnderStarways, TheHammerstein
+Il target viene automaticamente aggiornato con l'ultima versione disponibile in questa repo. Per chiedere modifiche al target o ottenere la password contattare: [/u/EnderStarways](https://www.reddit.com/user/EnderStarways) (giorno), [/u/TheHammerstein](https://www.reddit.com/user/TheHammerstein) (notte).
 
 ## Changelog
 
