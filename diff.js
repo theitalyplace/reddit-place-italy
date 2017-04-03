@@ -71,28 +71,40 @@ function getBoardBitmap(callback) {
 }
 
 function findDiffPixelInBmps(bmpBoard, bmpTarget, callback) {
-	let startX = getRandomInt(0, 1000);
-	let startY = getRandomInt(0, 1000);
-	let x = startX;
-	let y = startY;
-	while (true) {
-		let idx = x + y * 1000;
-		if (bmpTarget[idx] != -1) {
-			if (bmpTarget[idx] != bmpBoard[idx]) {
-				callback(x, y, bmpTarget[idx]);
-				return;
-			}
-		}
-		x++;
-		if (x >= 1000) {
-			x = 0;
-			y++;
-			if (y >= 1000) y = 0;
-		}
-		if (x == startX && y == startY) break;
+	let width = 1000;
+	let height = 1000;
+	let area = width * height;
+
+	let differences = 0;
+
+	for (let i = 0; i < area; i++) {
+		if (bmpTarget[i] == -1) continue;
+
+		if (bmpTarget[i] != bmpBoard[i]) differences++;
 	}
-	// no different pixel found
-	callback(-1, -1, -1);
+
+	if (differences == 0) {
+		callback(-1, -1, -1);
+
+		return;
+	}
+
+	console.log("found " + differences + " different pixels");
+
+	let selected = Math.floor(Math.random() * differences);
+	let ignored = 0;
+
+	for (let i = 0; i < area; i++) {
+		if (bmpTarget[i] == -1 || bmpTarget[i] == bmpBoard[i]) continue;
+
+		if (ignored == selected) {
+			callback(i % width, Math.floor(i / width), bmpTarget[i]);
+
+			return;
+		} else {
+			ignored++;
+		}
+	}
 }
 
 const colorsHex = [
@@ -133,6 +145,3 @@ function PNG2bitmap(png) {
 	return bitmap;
 }
 
-function getRandomInt(min, max) {
-	return Math.floor(Math.random() * (max - min)) + min;
-}
